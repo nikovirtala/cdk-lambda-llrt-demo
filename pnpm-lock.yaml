@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@types/aws-lambda':
+        specifier: ^8.10.145
+        version: 8.10.145
       aws-cdk-lib:
         specifier: 2.165.0
         version: 2.165.0(constructs@10.4.2)
+      cdk-lambda-llrt:
+        specifier: ^0.0.15
+        version: 0.0.15(aws-cdk-lib@2.165.0(constructs@10.4.2))(constructs@10.4.2)
       constructs:
         specifier: ^10.0.5
         version: 10.4.2
@@ -705,6 +711,9 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
+  '@types/aws-lambda@8.10.145':
+    resolution: {integrity: sha512-dtByW6WiFk5W5Jfgz1VM+YPA21xMXTuSFoLYIDY0L44jDLLflVPtZkYuu3/YxpGcvjzKFBZLU+GyKjR0HOYtyw==}
+
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
 
@@ -976,6 +985,12 @@ packages:
 
   caniuse-lite@1.0.30001676:
     resolution: {integrity: sha512-Qz6zwGCiPghQXGJvgQAem79esjitvJ+CxSbSQkW9H/UX5hg8XM88d4lp2W+MEQ81j+Hip58Il+jGVdazk1z9cw==}
+
+  cdk-lambda-llrt@0.0.15:
+    resolution: {integrity: sha512-N5qhE67TUMsSEiDgCSjXfByMUVoClL+JQKEJz4B+yX9A4unAhUKlcRKQzGmul2OC/qSeer6/zPO+72+vmOECdQ==}
+    peerDependencies:
+      aws-cdk-lib: ^2.38.0
+      constructs: ^10.0.5
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2973,6 +2988,8 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
+  '@types/aws-lambda@8.10.145': {}
+
   '@types/babel__core@7.20.5':
     dependencies:
       '@babel/parser': 7.26.2
@@ -3316,6 +3333,11 @@ snapshots:
   camelcase@6.3.0: {}
 
   caniuse-lite@1.0.30001676: {}
+
+  cdk-lambda-llrt@0.0.15(aws-cdk-lib@2.165.0(constructs@10.4.2))(constructs@10.4.2):
+    dependencies:
+      aws-cdk-lib: 2.165.0(constructs@10.4.2)
+      constructs: 10.4.2
 
   chalk@4.1.2:
     dependencies:

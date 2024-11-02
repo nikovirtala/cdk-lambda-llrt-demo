@@ -11,6 +11,7 @@ const project = new AwsCdkApp({
     cdkVersion: "2.165.0",
     defaultReleaseBranch: "main",
     dependabot: false,
+    deps: ["@types/aws-lambda", "cdk-lambda-llrt"],
     depsUpgradeOptions: {
         workflowOptions: {
             labels: ["auto-approve", "auto-merge"],
