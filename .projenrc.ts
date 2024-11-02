@@ -33,6 +33,7 @@ const project = new AwsCdkApp({
     },
   },
   projenrcTs: true,
+  description: "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */

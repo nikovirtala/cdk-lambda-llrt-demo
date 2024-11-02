@@ -1,5 +1,6 @@
 {
   "name": "cdk-lambda-llrt-demo",
+  "description": "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
   "repository": {
     "type": "git",
     "url": "https://github.com/nikovirtala/cdk-lambda-llrt-demo.git"
