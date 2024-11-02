@@ -19,6 +19,7 @@ const project = new AwsCdkApp({
     },
     description: "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
     devDeps: ["@nikovirtala/projen-aws-cdk-app"],
+    jest: false,
     license: "MIT",
     licensed: true,
     mergify: true,
