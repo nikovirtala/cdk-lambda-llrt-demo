@@ -5,6 +5,11 @@ const project = new AwsCdkApp({
   defaultReleaseBranch: "main",
   devDeps: ["@nikovirtala/projen-aws-cdk-app"],
   name: "cdk-lambda-llrt-demo",
+  repository: "https://github.com/nikovirtala/cdk-lambda-llrt-demo.git",
+  license: "MIT",
+  licensed: true,
+  authorName: "Niko Virtala",
+  authorEmail: "niko.virtala@hey.com",
   projenrcTs: true,
 
   // deps: [],                /* Runtime dependencies of this module. */

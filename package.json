@@ -1,5 +1,9 @@
 {
   "name": "cdk-lambda-llrt-demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikovirtala/cdk-lambda-llrt-demo.git"
+  },
   "scripts": {
     "build": "npx projen build",
     "bundle": "npx projen bundle",
@@ -22,6 +26,11 @@
     "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
     "projen": "npx projen"
+  },
+  "author": {
+    "name": "Niko Virtala",
+    "email": "niko.virtala@hey.com",
+    "organization": false
   },
   "devDependencies": {
     "@nikovirtala/projen-aws-cdk-app": "0.0.11",
@@ -51,7 +60,7 @@
   "engines": {
     "node": ">= 22.11.0"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
