@@ -1,4 +1,5 @@
 import { AwsCdkApp } from "@nikovirtala/projen-aws-cdk-app";
+import { javascript } from "projen";
 
 const project = new AwsCdkApp({
   cdkVersion: "2.165.0",
@@ -10,6 +11,14 @@ const project = new AwsCdkApp({
   licensed: true,
   authorName: "Niko Virtala",
   authorEmail: "niko.virtala@hey.com",
+  prettier: true,
+  prettierOptions: {
+    settings: {
+      printWidth: 120,
+      tabWidth: 2,
+      trailingComma: javascript.TrailingComma.ALL,
+    },
+  },
   projenrcTs: true,
 
   // deps: [],                /* Runtime dependencies of this module. */
