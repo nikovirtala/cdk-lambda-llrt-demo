@@ -2,28 +2,28 @@ import { AwsCdkApp } from "@nikovirtala/projen-aws-cdk-app";
 import { javascript } from "projen";
 
 const project = new AwsCdkApp({
+  authorEmail: "niko.virtala@hey.com",
+  authorName: "Niko Virtala",
+  autoApproveOptions: {
+    secret: "GITHUB_TOKEN",
+    allowedUsernames: ["nikovirtala"],
+  },
   cdkVersion: "2.165.0",
   defaultReleaseBranch: "main",
-  devDeps: ["@nikovirtala/projen-aws-cdk-app"],
-  name: "cdk-lambda-llrt-demo",
-  repository: "https://github.com/nikovirtala/cdk-lambda-llrt-demo.git",
-  license: "MIT",
-  licensed: true,
-  authorName: "Niko Virtala",
-  authorEmail: "niko.virtala@hey.com",
-  packageManager: javascript.NodePackageManager.PNPM,
-  pnpmVersion: "9",
   dependabot: false,
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ["auto-approve", "auto-merge"],
     },
   },
-  autoApproveOptions: {
-    secret: "GITHUB_TOKEN",
-    allowedUsernames: ["nikovirtala"],
-  },
+  description: "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
+  devDeps: ["@nikovirtala/projen-aws-cdk-app"],
+  license: "MIT",
+  licensed: true,
   mergify: true,
+  name: "cdk-lambda-llrt-demo",
+  packageManager: javascript.NodePackageManager.PNPM,
+  pnpmVersion: "9",
   prettier: true,
   prettierOptions: {
     settings: {
@@ -33,11 +33,7 @@ const project = new AwsCdkApp({
     },
   },
   projenrcTs: true,
-  description: "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  repository: "https://github.com/nikovirtala/cdk-lambda-llrt-demo.git",
 });
 
 project.synth();
