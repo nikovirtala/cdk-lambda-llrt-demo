@@ -13,6 +13,17 @@ const project = new AwsCdkApp({
   authorEmail: "niko.virtala@hey.com",
   packageManager: javascript.NodePackageManager.PNPM,
   pnpmVersion: "9",
+  dependabot: false,
+  depsUpgradeOptions: {
+    workflowOptions: {
+      labels: ["auto-approve", "auto-merge"],
+    },
+  },
+  autoApproveOptions: {
+    secret: "GITHUB_TOKEN",
+    allowedUsernames: ["nikovirtala"],
+  },
+  mergify: true,
   prettier: true,
   prettierOptions: {
     settings: {
