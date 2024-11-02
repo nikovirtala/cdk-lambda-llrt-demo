@@ -26,6 +26,7 @@
     "strictPropertyInitialization": true,
     "stripInternal": true,
     "target": "esnext",
+    "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "moduleResolution": "nodenext",
