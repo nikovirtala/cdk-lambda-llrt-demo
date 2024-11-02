@@ -11,6 +11,8 @@ const project = new AwsCdkApp({
   licensed: true,
   authorName: "Niko Virtala",
   authorEmail: "niko.virtala@hey.com",
+  packageManager: javascript.NodePackageManager.PNPM,
+  pnpmVersion: "9",
   prettier: true,
   prettierOptions: {
     settings: {
