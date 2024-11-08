@@ -22,8 +22,8 @@ importers:
         version: 10.4.2
     devDependencies:
       '@nikovirtala/projen-aws-cdk-app':
-        specifier: 0.0.15
-        version: 0.0.15(constructs@10.4.2)(projen@0.90.0(constructs@10.4.2))
+        specifier: 0.0.16
+        version: 0.0.16(constructs@10.4.2)(projen@0.90.0(constructs@10.4.2))
       '@types/node':
         specifier: ^22
         version: 22.9.0
@@ -403,8 +403,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.15':
-    resolution: {integrity: sha512-p4DxejsK0aghiYgluyIeUfZahl/p3uiF1cGrOPdtBMbvfs6wRdeHmbDkcH7mnRLhKWMSFc0uJ9WMf6FQBepNUg==}
+  '@nikovirtala/projen-aws-cdk-app@0.0.16':
+    resolution: {integrity: sha512-rL93QvHPe7gy5QnIFMIN9MFIH85f/52jSj22L/xtFgXB0NKl3qrzWuNOsadPozmxRYAvLE9bFVqvgcWLaw6MDQ==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.4.2
@@ -1615,7 +1615,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.15(constructs@10.4.2)(projen@0.90.0(constructs@10.4.2))':
+  '@nikovirtala/projen-aws-cdk-app@0.0.16(constructs@10.4.2)(projen@0.90.0(constructs@10.4.2))':
     dependencies:
       constructs: 10.4.2
       projen: 0.90.0(constructs@10.4.2)
