@@ -22,8 +22,8 @@ importers:
         version: 10.4.2
     devDependencies:
       '@nikovirtala/projen-aws-cdk-app':
-        specifier: 0.0.17
-        version: 0.0.17(constructs@10.4.2)(projen@0.90.1(constructs@10.4.2))
+        specifier: 0.0.18
+        version: 0.0.18(constructs@10.4.2)(projen@0.90.2(constructs@10.4.2))
       '@types/node':
         specifier: ^22
         version: 22.9.0
@@ -58,8 +58,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       projen:
-        specifier: ^0.90.1
-        version: 0.90.1(constructs@10.4.2)
+        specifier: ^0.90.2
+        version: 0.90.2(constructs@10.4.2)
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
@@ -426,12 +426,12 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.17':
-    resolution: {integrity: sha512-qs8DE/t7fBIMsmZSJAJXR/iWdeJZ8Meyx5eoE3/aWRQpZ58jiF+SgXV2P8uTcOujWV/HuXlA1ypd6MOSW0RAPQ==}
+  '@nikovirtala/projen-aws-cdk-app@0.0.18':
+    resolution: {integrity: sha512-9xfCOXkOBkIULqVAbDJ46Wily/xHsd56Uu9Ex2KGHZjYwyG0GYhIM/YDxGShusaKovh+jhU/7fyB0qum5EolfQ==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.4.2
-      projen: ^0.90.0
+      projen: ^0.90.1
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1190,8 +1190,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  projen@0.90.1:
-    resolution: {integrity: sha512-1oVgUp0lry64Wb3LH+97/Nlci9BUZd/yambpQ0RmqIX9fKzAlq7H0N2bMjepjRkKK5HQNuYB6OotYG2L73eDhA==}
+  projen@0.90.2:
+    resolution: {integrity: sha512-AMCSpo/IDGKvww+b5PFMv1fOpXkId7Tn6ISJvUDxjAb+/VrAqequcAJrlvDl0tO75ZRDY18b2N1twZFPyeueew==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:
@@ -1596,10 +1596,10 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.17(constructs@10.4.2)(projen@0.90.1(constructs@10.4.2))':
+  '@nikovirtala/projen-aws-cdk-app@0.0.18(constructs@10.4.2)(projen@0.90.2(constructs@10.4.2))':
     dependencies:
       constructs: 10.4.2
-      projen: 0.90.1(constructs@10.4.2)
+      projen: 0.90.2(constructs@10.4.2)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2504,7 +2504,7 @@ snapshots:
 
   prettier@3.3.3: {}
 
-  projen@0.90.1(constructs@10.4.2):
+  projen@0.90.2(constructs@10.4.2):
     dependencies:
       constructs: 10.4.2
 
