@@ -22,8 +22,8 @@ importers:
         version: 10.4.2
     devDependencies:
       '@nikovirtala/projen-aws-cdk-app':
-        specifier: 0.0.20
-        version: 0.0.20(constructs@10.4.2)(projen@0.90.2(constructs@10.4.2))
+        specifier: 0.0.21
+        version: 0.0.21(constructs@10.4.2)(projen@0.90.2(constructs@10.4.2))
       '@types/node':
         specifier: ^22
         version: 22.9.0
@@ -426,8 +426,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.20':
-    resolution: {integrity: sha512-7P31wteJViVGglb+thR87WJ8zPUnb/ZlYD0wmZNoQPB1xCL913krXZ4TReUpYnv6TWTJYOXOBKYNTn8YLLGR2g==}
+  '@nikovirtala/projen-aws-cdk-app@0.0.21':
+    resolution: {integrity: sha512-xyQoBgTkpjsathwwcWtCawFRsjxYrwiHNTdlmMJSarmW2I7RN0aG783py/6bohdCfWeQ+niznhNAzXBqgwWsuw==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.4.2
@@ -1596,7 +1596,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.20(constructs@10.4.2)(projen@0.90.2(constructs@10.4.2))':
+  '@nikovirtala/projen-aws-cdk-app@0.0.21(constructs@10.4.2)(projen@0.90.2(constructs@10.4.2))':
     dependencies:
       constructs: 10.4.2
       projen: 0.90.2(constructs@10.4.2)
