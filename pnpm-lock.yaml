@@ -22,8 +22,8 @@ importers:
         version: 10.4.2
     devDependencies:
       '@nikovirtala/projen-aws-cdk-app':
-        specifier: 0.0.28
-        version: 0.0.28(constructs@10.4.2)(projen@0.90.3(constructs@10.4.2))
+        specifier: 0.0.29
+        version: 0.0.29(constructs@10.4.2)(projen@0.90.5(constructs@10.4.2))
       '@types/node':
         specifier: ^22
         version: 22.9.1
@@ -58,8 +58,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       projen:
-        specifier: ^0.90.3
-        version: 0.90.3(constructs@10.4.2)
+        specifier: ^0.90.5
+        version: 0.90.5(constructs@10.4.2)
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
@@ -426,8 +426,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.28':
-    resolution: {integrity: sha512-l39L0ABn+ev5PkiJZEiHsmxwkuMEV0ZeWhPEkvXfOnx/ZDo7Hy+UnMj0JvTui+rVkbc/+1Obt31g9dl/R6KTMA==}
+  '@nikovirtala/projen-aws-cdk-app@0.0.29':
+    resolution: {integrity: sha512-LsfCoZbWZ9AbPR2DdfZZGCUFqt9zIlJOy5NLOi4M0WZ0ullGNBzfP7LU0iI/3QXvyZIT9oMYqZPXSr9PPTceCw==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.4.2
@@ -1195,8 +1195,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  projen@0.90.3:
-    resolution: {integrity: sha512-hvnlTf4y4tVQS+DGsi8mAM3pTuTrJQMldr/gDL0sZOgpvUYP8FZ6SPb3sx5HSNql2iyaaU8S+e9WKZi3C3I7Zw==}
+  projen@0.90.5:
+    resolution: {integrity: sha512-MfywqL+8e1gTHblreaxJOxW/Cyvm6dcY/Sg0tBwS6xCAsnlqO0qx+MQSPpPEIouVqcDNKLx8Jsd7BwTqGuQBBQ==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:
@@ -1598,10 +1598,10 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.28(constructs@10.4.2)(projen@0.90.3(constructs@10.4.2))':
+  '@nikovirtala/projen-aws-cdk-app@0.0.29(constructs@10.4.2)(projen@0.90.5(constructs@10.4.2))':
     dependencies:
       constructs: 10.4.2
-      projen: 0.90.3(constructs@10.4.2)
+      projen: 0.90.5(constructs@10.4.2)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2506,7 +2506,7 @@ snapshots:
 
   prettier@3.3.3: {}
 
-  projen@0.90.3(constructs@10.4.2):
+  projen@0.90.5(constructs@10.4.2):
     dependencies:
       constructs: 10.4.2
 
