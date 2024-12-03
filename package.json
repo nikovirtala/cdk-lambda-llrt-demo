@@ -33,7 +33,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@nikovirtala/projen-aws-cdk-app": "0.0.41",
+    "@nikovirtala/projen-aws-cdk-app": "0.0.42",
     "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
@@ -45,7 +45,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.4.1",
-    "projen": "^0.90.5",
+    "projen": "^0.90.6",
     "tsx": "^4.19.2",
     "typescript": "5.7.2"
   },
