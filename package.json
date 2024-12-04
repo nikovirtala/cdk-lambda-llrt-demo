@@ -33,7 +33,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@nikovirtala/projen-aws-cdk-app": "0.0.42",
+    "@nikovirtala/projen-aws-cdk-app": "0.0.43",
     "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
@@ -41,7 +41,7 @@
     "esbuild": "^0.24.0",
     "eslint": "^9",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.4.1",
@@ -52,7 +52,7 @@
   "dependencies": {
     "@types/aws-lambda": "^8.10.146",
     "aws-cdk-lib": "2.165.0",
-    "cdk-lambda-llrt": "^0.0.15",
+    "cdk-lambda-llrt": "^0.0.16",
     "constructs": "^10.0.5"
   },
   "pnpm": {},
