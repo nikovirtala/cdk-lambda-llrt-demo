@@ -22,11 +22,11 @@ importers:
         version: 10.4.2
     devDependencies:
       '@nikovirtala/projen-aws-cdk-app':
-        specifier: 0.0.50
-        version: 0.0.50(constructs@10.4.2)(projen@0.90.6(constructs@10.4.2))
+        specifier: 0.0.51
+        version: 0.0.51(constructs@10.4.2)(projen@0.90.6(constructs@10.4.2))
       '@types/node':
         specifier: ^22
-        version: 22.10.1
+        version: 22.10.2
       '@typescript-eslint/eslint-plugin':
         specifier: ^8
         version: 8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)
@@ -426,8 +426,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.50':
-    resolution: {integrity: sha512-Ki7rdU8GZwYhfgCPC8Pq6lQZBKykuq9zgikBQ3NrgzRRUURaWAII+59mNa1btjY2dZjOJoJoa/avFMBm/5uYWw==}
+  '@nikovirtala/projen-aws-cdk-app@0.0.51':
+    resolution: {integrity: sha512-I2DQLbXZw+jJlt2UaYRF8oD7weyyw9D7avi6KgI6jPIhM6UsZjwv8jUebcvMM3xtlorSSEJw0ehQlBe9llsk1A==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.4.2
@@ -468,8 +468,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.10.1':
-    resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
+  '@types/node@22.10.2':
+    resolution: {integrity: sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==}
 
   '@typescript-eslint/eslint-plugin@8.18.0':
     resolution: {integrity: sha512-NR2yS7qUqCL7AIxdJUQf2MKKNDVNaig/dEB0GBLU7D+ZdHgK1NoH/3wsgO3OnPVipn51tG3MAwaODEGil70WEw==}
@@ -1595,7 +1595,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.50(constructs@10.4.2)(projen@0.90.6(constructs@10.4.2))':
+  '@nikovirtala/projen-aws-cdk-app@0.0.51(constructs@10.4.2)(projen@0.90.6(constructs@10.4.2))':
     dependencies:
       constructs: 10.4.2
       projen: 0.90.6(constructs@10.4.2)
@@ -1626,7 +1626,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.10.1':
+  '@types/node@22.10.2':
     dependencies:
       undici-types: 6.20.0
 
