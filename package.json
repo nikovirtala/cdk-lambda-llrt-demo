@@ -33,7 +33,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@nikovirtala/projen-aws-cdk-app": "0.0.66",
+    "@nikovirtala/projen-aws-cdk-app": "0.0.70",
     "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
@@ -57,7 +57,7 @@
   },
   "pnpm": {},
   "engines": {
-    "node": ">= 22.11.0"
+    "node": ">= 22.12.0"
   },
   "license": "MIT",
   "publishConfig": {
