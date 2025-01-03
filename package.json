@@ -33,7 +33,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@nikovirtala/projen-aws-cdk-app": "0.0.75",
+    "@nikovirtala/projen-aws-cdk-app": "0.0.76",
     "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
@@ -50,7 +50,7 @@
     "typescript": "5.7.2"
   },
   "dependencies": {
-    "@types/aws-lambda": "^8.10.146",
+    "@types/aws-lambda": "^8.10.147",
     "aws-cdk-lib": "2.165.0",
     "cdk-lambda-llrt": "^0.0.16",
     "constructs": "^10.0.5"
