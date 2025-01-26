@@ -1,5 +1,6 @@
 import { App } from "aws-cdk-lib";
 import { Template } from "aws-cdk-lib/assertions";
+import { expect, test } from "vitest";
 import { LambdaLlrtStack } from "../src/stacks";
 
 test("Snapshot", () => {
