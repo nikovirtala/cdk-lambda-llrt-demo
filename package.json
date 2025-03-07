@@ -57,7 +57,7 @@
   "dependencies": {
     "@types/aws-lambda": "^8.10.147",
     "aws-cdk-lib": "2.165.0",
-    "cdk-lambda-llrt": "^0.0.16",
+    "cdk-lambda-llrt": "^0.1.0",
     "constructs": "^10.0.5"
   },
   "pnpm": {},
