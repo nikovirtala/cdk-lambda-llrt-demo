@@ -49,7 +49,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.4.0",
     "prettier": "^3.5.3",
-    "projen": "^0.91.30",
+    "projen": "^0.91.31",
     "tsx": "^4.19.4",
     "typescript": "5.8.3",
     "vitest": "^3"
