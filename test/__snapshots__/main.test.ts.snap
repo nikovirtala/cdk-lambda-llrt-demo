@@ -50,25 +50,6 @@ exports[`Snapshot 1`] = `
       },
       "Type": "AWS::Lambda::Function",
     },
-    "LlrtFunctionLogGroup9346E2C4": {
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "LogGroupName": {
-          "Fn::Join": [
-            "",
-            [
-              "/aws/lambda/",
-              {
-                "Ref": "LlrtFunctionBBA0B80E",
-              },
-            ],
-          ],
-        },
-        "RetentionInDays": 731,
-      },
-      "Type": "AWS::Logs::LogGroup",
-      "UpdateReplacePolicy": "Retain",
-    },
     "LlrtFunctionServiceRole63565B1A": {
       "Properties": {
         "AssumeRolePolicyDocument": {
