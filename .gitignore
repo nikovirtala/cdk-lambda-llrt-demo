@@ -55,4 +55,5 @@ jspm_packages/
 !/mise.toml
 /coverage/
 !/vitest.config.ts
+.tmp/llrt/
 !/.projenrc.ts

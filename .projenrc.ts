@@ -48,4 +48,6 @@ project.vscode?.settings.addSettings({
     "editor.tabSize": 4,
 });
 
+project.gitignore.addPatterns(".tmp/llrt/");
+
 project.synth();
