@@ -50,7 +50,7 @@
     "eslint-plugin-prettier": "^5.4.1",
     "prettier": "^3.5.3",
     "projen": "^0.91.31",
-    "tsx": "^4.20.1",
+    "tsx": "^4.20.3",
     "typescript": "5.8.3",
     "vitest": "^3"
   },
