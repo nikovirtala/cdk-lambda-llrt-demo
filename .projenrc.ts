@@ -1,5 +1,4 @@
 import { AwsCdkApp } from "@nikovirtala/projen-aws-cdk-app";
-import { javascript } from "projen";
 
 const project = new AwsCdkApp({
     authorEmail: "niko.virtala@hey.com",
@@ -22,30 +21,7 @@ const project = new AwsCdkApp({
     license: "MIT",
     licensed: true,
     name: "cdk-lambda-llrt-demo",
-    packageManager: javascript.NodePackageManager.PNPM,
-    pnpmVersion: "9",
-    prettier: true,
-    prettierOptions: {
-        settings: {
-            printWidth: 120,
-            tabWidth: 4,
-            trailingComma: javascript.TrailingComma.ALL,
-        },
-    },
-    projenrcTs: true,
     repository: "https://github.com/nikovirtala/cdk-lambda-llrt-demo.git",
-});
-
-project.vscode?.extensions.addRecommendations("dbaeumer.vscode-eslint", "esbenp.prettier-vscode");
-
-project.vscode?.settings.addSettings({
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "always",
-        "source.organizeImports": "always",
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 4,
 });
 
 project.gitignore.addPatterns(".tmp/llrt/");

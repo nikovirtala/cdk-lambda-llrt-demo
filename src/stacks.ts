@@ -1,8 +1,8 @@
 import { join } from "node:path";
-import { aws_lambda, CfnOutput, Stack, StackProps } from "aws-cdk-lib";
+import { CfnOutput, Stack, type StackProps, aws_lambda } from "aws-cdk-lib";
 import { LlrtFunction } from "cdk-lambda-llrt";
 
-import { Construct } from "constructs";
+import type { Construct } from "constructs";
 
 export class LambdaLlrtStack extends Stack {
     constructor(scope: Construct, id: string, props: StackProps = {}) {
