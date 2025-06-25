@@ -1,5 +1,5 @@
 import { join } from "node:path";
-import { CfnOutput, Stack, type StackProps, aws_lambda } from "aws-cdk-lib";
+import { aws_lambda, CfnOutput, Stack, type StackProps } from "aws-cdk-lib";
 import { LlrtFunction } from "cdk-lambda-llrt";
 
 import type { Construct } from "constructs";
