@@ -93,6 +93,20 @@ exports[`Snapshot 1`] = `
       },
       "Type": "AWS::Lambda::Url",
     },
+    "LlrtFunctioninvokefunction4F9E77A2": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LlrtFunctionBBA0B80E",
+            "Arn",
+          ],
+        },
+        "InvokedViaFunctionUrl": true,
+        "Principal": "*",
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
     "LlrtFunctioninvokefunctionurl31E6F0AE": {
       "Properties": {
         "Action": "lambda:InvokeFunctionUrl",
