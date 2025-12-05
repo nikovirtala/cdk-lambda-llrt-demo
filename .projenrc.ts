@@ -1,6 +1,6 @@
-import { AwsCdkApp } from "@nikovirtala/projen-aws-cdk-app";
+import { AwsCdkTypeScriptAppProject } from "@nikovirtala/projen-constructs";
 
-const project = new AwsCdkApp({
+const project = new AwsCdkTypeScriptAppProject({
     authorEmail: "niko.virtala@hey.com",
     authorName: "Niko Virtala",
     autoApproveOptions: {
@@ -17,7 +17,7 @@ const project = new AwsCdkApp({
         },
     },
     description: "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
-    devDeps: ["@nikovirtala/projen-aws-cdk-app"],
+    devDeps: ["@nikovirtala/projen-constructs"],
     license: "MIT",
     licensed: true,
     name: "cdk-lambda-llrt-demo",
