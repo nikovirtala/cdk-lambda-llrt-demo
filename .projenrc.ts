@@ -27,8 +27,8 @@ const project = new AwsCdkTypeScriptAppProject({
 
 project.gitignore.addPatterns(".tmp/llrt/");
 
-// Fix biome.jsonc schema path to use remote URL instead of local node_modules path
-// This prevents issues with pnpm's hoisting behavior causing file mutations during build
+// Fix biome.jsonc schema path to use local node_modules reference
+// This ensures consistent schema path resolution
 class BiomeSchemaFix extends Component {
     constructor(project: AwsCdkTypeScriptAppProject) {
         super(project);
@@ -37,9 +37,9 @@ class BiomeSchemaFix extends Component {
     postSynthesize(): void {
         const biomeFile = this.project.tryFindObjectFile("biome.jsonc");
         if (biomeFile instanceof JsonFile) {
-            // Override the $schema to use a stable remote URL
+            // Override the $schema to use local node_modules path
             biomeFile.patch({
-                $schema: "https://biomejs.dev/schemas/1.9.4/schema.json",
+                $schema: "node_modules/@biomejs/biome/configuration_schema.json",
             });
         }
     }
