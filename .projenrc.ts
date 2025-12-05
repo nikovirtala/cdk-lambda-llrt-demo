@@ -29,9 +29,7 @@ const project = new AwsCdkTypeScriptAppProject({
 project.gitignore.addPatterns(".tmp/llrt/");
 
 // Ensure @nikovirtala/projen-constructs has the correct version in deps.json
-const projenConstructsDep = project.deps.all.find(
-    (dep) => dep.name === "@nikovirtala/projen-constructs"
-);
+const projenConstructsDep = project.deps.all.find((dep) => dep.name === "@nikovirtala/projen-constructs");
 if (projenConstructsDep) {
     // Force the version to be explicitly set
     project.deps.removeDependency("@nikovirtala/projen-constructs");
