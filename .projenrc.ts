@@ -1,6 +1,7 @@
-import { AwsCdkApp } from "@nikovirtala/projen-aws-cdk-app";
+import { AwsCdkTypeScriptAppProject } from "@nikovirtala/projen-constructs";
+import { DependencyType } from "projen";
 
-const project = new AwsCdkApp({
+const project = new AwsCdkTypeScriptAppProject({
     authorEmail: "niko.virtala@hey.com",
     authorName: "Niko Virtala",
     autoApproveOptions: {
@@ -12,12 +13,13 @@ const project = new AwsCdkApp({
     dependabot: false,
     deps: ["@types/aws-lambda", "cdk-lambda-llrt"],
     depsUpgradeOptions: {
+        exclude: ["@nikovirtala/projen-constructs"],
         workflowOptions: {
             labels: ["auto-approve", "auto-merge"],
         },
     },
     description: "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
-    devDeps: ["@nikovirtala/projen-aws-cdk-app"],
+    devDeps: ["@nikovirtala/projen-constructs@^0.2.26"],
     license: "MIT",
     licensed: true,
     name: "cdk-lambda-llrt-demo",
@@ -25,5 +27,13 @@ const project = new AwsCdkApp({
 });
 
 project.gitignore.addPatterns(".tmp/llrt/");
+
+// Ensure @nikovirtala/projen-constructs has the correct version in deps.json
+const projenConstructsDep = project.deps.all.find((dep) => dep.name === "@nikovirtala/projen-constructs");
+if (projenConstructsDep) {
+    // Force the version to be explicitly set
+    project.deps.removeDependency("@nikovirtala/projen-constructs");
+    project.deps.addDependency("@nikovirtala/projen-constructs@^0.2.26", DependencyType.BUILD);
+}
 
 project.synth();
