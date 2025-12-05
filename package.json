@@ -37,8 +37,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2",
     "@nikovirtala/projen-constructs": "^0.2.26",
-    "@nikovirtala/projen-vitest": "^2.1.20",
-    "@types/node": "^22",
+    "@types/node": "^24",
     "@vitest/coverage-v8": "^4",
     "aws-cdk": "^2",
     "esbuild": "^0.27.1",
@@ -51,7 +50,7 @@
     "@types/aws-lambda": "^8.10.159",
     "aws-cdk-lib": "^2.165.0",
     "cdk-lambda-llrt": "^0.1.4",
-    "constructs": "^10.0.5"
+    "constructs": "^10.4.3"
   },
   "pnpm": {},
   "engines": {
