@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2",
-    "@nikovirtala/projen-constructs": "^1.1.0",
+    "@nikovirtala/projen-constructs": "^0.2.26",
     "@nikovirtala/projen-vitest": "^2.1.20",
     "@types/node": "^22",
     "@vitest/coverage-v8": "^4",
