@@ -15,8 +15,8 @@ importers:
         specifier: ^2.165.0
         version: 2.231.0(constructs@10.4.3)
       cdk-lambda-llrt:
-        specifier: ^0.1.2
-        version: 0.1.2(aws-cdk-lib@2.231.0(constructs@10.4.3))(constructs@10.4.3)
+        specifier: ^0.1.4
+        version: 0.1.4(aws-cdk-lib@2.231.0(constructs@10.4.3))(constructs@10.4.3)
       constructs:
         specifier: ^10.0.5
         version: 10.4.3
@@ -671,8 +671,8 @@ packages:
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
-  cdk-lambda-llrt@0.1.2:
-    resolution: {integrity: sha512-AV2Njq3xq+jXRwN+GhEdFq+e5IlivcASdiznMctf+eYRZczMTxYjYoOHF5QgHaprQBHUly4d1Xp+cgLJx57g+Q==}
+  cdk-lambda-llrt@0.1.4:
+    resolution: {integrity: sha512-wGzT4FNqgpD0K9OlRQaIOMRwSbvl0Eavc4J7LMShGV/A404aZbp0RrRVWOCyZlslQ5htP+Mf0eyqdxJ25BiHtQ==}
     peerDependencies:
       aws-cdk-lib: ^2.38.0
       constructs: ^10.0.5
@@ -1344,7 +1344,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.2
 
-  cdk-lambda-llrt@0.1.2(aws-cdk-lib@2.231.0(constructs@10.4.3))(constructs@10.4.3):
+  cdk-lambda-llrt@0.1.4(aws-cdk-lib@2.231.0(constructs@10.4.3))(constructs@10.4.3):
     dependencies:
       aws-cdk-lib: 2.231.0(constructs@10.4.3)
       constructs: 10.4.3
