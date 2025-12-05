@@ -1,6 +1,6 @@
-import { AwsCdkApp } from "@nikovirtala/projen-aws-cdk-app";
+import { AwsCdkTypeScriptApp } from "@nikovirtala/projen-aws-cdk-app";
 
-const project = new AwsCdkApp({
+const project = new AwsCdkTypeScriptApp({
     authorEmail: "niko.virtala@hey.com",
     authorName: "Niko Virtala",
     autoApproveOptions: {
