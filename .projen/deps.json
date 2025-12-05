@@ -6,7 +6,7 @@
       "type": "build"
     },
     {
-      "name": "@nikovirtala/projen-aws-cdk-app",
+      "name": "@nikovirtala/projen-constructs",
       "type": "build"
     },
     {
