@@ -1,5 +1,4 @@
 import { AwsCdkTypeScriptAppProject } from "@nikovirtala/projen-constructs";
-import { Component, JsonFile } from "projen";
 
 const project = new AwsCdkTypeScriptAppProject({
     authorEmail: "niko.virtala@hey.com",
@@ -18,7 +17,7 @@ const project = new AwsCdkTypeScriptAppProject({
         },
     },
     description: "Example of using LLRT (Low Latency Runtime) on AWS Lambda.",
-    devDeps: ["@nikovirtala/projen-constructs@^0.2.26"],
+    devDeps: ["@nikovirtala/projen-constructs"],
     license: "MIT",
     licensed: true,
     name: "cdk-lambda-llrt-demo",
@@ -26,25 +25,5 @@ const project = new AwsCdkTypeScriptAppProject({
 });
 
 project.gitignore.addPatterns(".tmp/llrt/");
-
-// Fix biome.jsonc schema path to use local node_modules reference
-// This ensures consistent schema path resolution
-class BiomeSchemaFix extends Component {
-    constructor(project: AwsCdkTypeScriptAppProject) {
-        super(project);
-    }
-
-    postSynthesize(): void {
-        const biomeFile = this.project.tryFindObjectFile("biome.jsonc");
-        if (biomeFile instanceof JsonFile) {
-            // Override the $schema to use local node_modules path
-            biomeFile.patch({
-                $schema: "node_modules/@biomejs/biome/configuration_schema.json",
-            });
-        }
-    }
-}
-
-new BiomeSchemaFix(project);
 
 project.synth();
