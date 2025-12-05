@@ -1,4 +1,5 @@
 import { AwsCdkTypeScriptAppProject } from "@nikovirtala/projen-constructs";
+import { Component, JsonFile } from "projen";
 
 const project = new AwsCdkTypeScriptAppProject({
     authorEmail: "niko.virtala@hey.com",
@@ -25,5 +26,25 @@ const project = new AwsCdkTypeScriptAppProject({
 });
 
 project.gitignore.addPatterns(".tmp/llrt/");
+
+// Fix biome.jsonc schema path to use remote URL instead of local node_modules path
+// This prevents issues with pnpm's hoisting behavior causing file mutations during build
+class BiomeSchemaFix extends Component {
+    constructor(project: AwsCdkTypeScriptAppProject) {
+        super(project);
+    }
+
+    postSynthesize(): void {
+        const biomeFile = this.project.tryFindObjectFile("biome.jsonc");
+        if (biomeFile instanceof JsonFile) {
+            // Override the $schema to use a stable remote URL
+            biomeFile.patch({
+                $schema: "https://biomejs.dev/schemas/1.9.4/schema.json",
+            });
+        }
+    }
+}
+
+new BiomeSchemaFix(project);
 
 project.synth();
