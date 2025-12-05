@@ -6,4 +6,4 @@ Example of publishing function (with [function URL](https://docs.aws.amazon.com/
 
 -   [`LlrtFunction`](https://github.com/tmokmss/cdk-lambda-llrt) construct
 
--   [`AwsCdkApp`](https://github.com/nikovirtala/projen-aws-cdk-app) projen template (TypeScript with ECMAScript modules)
+-   [`AwsCdkTypeScriptAppProject`](https://github.com/nikovirtala/projen-constructs) projen template (TypeScript with ECMAScript modules)
