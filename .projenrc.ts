@@ -1,4 +1,5 @@
 import { AwsCdkTypeScriptAppProject } from "@nikovirtala/projen-constructs";
+import { DependencyType } from "projen";
 
 const project = new AwsCdkTypeScriptAppProject({
     authorEmail: "niko.virtala@hey.com",
@@ -12,6 +13,7 @@ const project = new AwsCdkTypeScriptAppProject({
     dependabot: false,
     deps: ["@types/aws-lambda", "cdk-lambda-llrt"],
     depsUpgradeOptions: {
+        exclude: ["@nikovirtala/projen-constructs"],
         workflowOptions: {
             labels: ["auto-approve", "auto-merge"],
         },
@@ -25,5 +27,15 @@ const project = new AwsCdkTypeScriptAppProject({
 });
 
 project.gitignore.addPatterns(".tmp/llrt/");
+
+// Ensure @nikovirtala/projen-constructs has the correct version in deps.json
+const projenConstructsDep = project.deps.all.find(
+    (dep) => dep.name === "@nikovirtala/projen-constructs"
+);
+if (projenConstructsDep) {
+    // Force the version to be explicitly set
+    project.deps.removeDependency("@nikovirtala/projen-constructs");
+    project.deps.addDependency("@nikovirtala/projen-constructs@^0.2.26", DependencyType.BUILD);
+}
 
 project.synth();
