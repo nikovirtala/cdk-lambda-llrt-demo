@@ -2,12 +2,17 @@
 
 ## ⚠️ Projen-Managed Project
 
-This project is **entirely managed by projen**. Key implications:
+This project is **entirely managed by projen** using the `AwsCdkTypeScriptAppProject` template from `@nikovirtala/projen-constructs`. Key implications:
 
 - **DO NOT** manually edit generated files (package.json, tsconfig.json, etc.)
 - **ALL** configuration changes must be made in `.projenrc.ts`
 - After modifying `.projenrc.ts`, run `npx projen` to regenerate files
 - Dependencies, scripts, and tooling are defined in `.projenrc.ts`, not package.json
+
+## Project Template
+- **Template**: `AwsCdkTypeScriptAppProject` from `@nikovirtala/projen-constructs`
+- **Purpose**: Provides opinionated setup for AWS CDK TypeScript projects with modern tooling
+- **Features**: Includes Biome, Vitest, Homebrew/mise integration, and CDK deployment automation
 
 ## Build System
 - **Projen**: Project configuration and build orchestration (all scripts run through `npx projen`)
@@ -28,7 +33,7 @@ This project is **entirely managed by projen**. Key implications:
 - **Vitest**: Testing framework with snapshot support
 
 ## Runtime Requirements
-- Node.js >= 22.21.1
+- Node.js >= 24.11.1
 - ARM64 architecture for Lambda deployment
 
 ## Common Commands
