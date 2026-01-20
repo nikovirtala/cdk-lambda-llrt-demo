@@ -48,7 +48,7 @@
     "vitest": "^4"
   },
   "dependencies": {
-    "@types/aws-lambda": "^8.10.159",
+    "@types/aws-lambda": "^8.10.160",
     "aws-cdk-lib": "^2.165.0",
     "cdk-lambda-llrt": "^0.1.4",
     "constructs": "^10.0.5"
