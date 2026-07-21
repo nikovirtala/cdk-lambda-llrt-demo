@@ -13,23 +13,23 @@ importers:
         version: 8.10.162
       aws-cdk-lib:
         specifier: ^2.165.0
-        version: 2.261.0(constructs@10.7.0)
+        version: 2.261.0(constructs@10.7.1)
       cdk-lambda-llrt:
         specifier: ^0.1.4
-        version: 0.1.4(aws-cdk-lib@2.261.0(constructs@10.7.0))(constructs@10.7.0)
+        version: 0.1.4(aws-cdk-lib@2.261.0(constructs@10.7.1))(constructs@10.7.1)
       constructs:
         specifier: ^10.0.5
-        version: 10.7.0
+        version: 10.7.1
     devDependencies:
       '@biomejs/biome':
         specifier: ^2
         version: 2.5.4
       '@nikovirtala/projen-aws-cdk-app':
         specifier: 0.0.141
-        version: 0.0.141(@nikovirtala/projen-vitest@2.1.35(constructs@10.7.0)(projen@0.98.34(constructs@10.7.0)))(aws-cdk-lib@2.261.0(constructs@10.7.0))(constructs@10.7.0)(projen@0.98.34(constructs@10.7.0))
+        version: 0.0.141(@nikovirtala/projen-vitest@2.1.35(constructs@10.7.1)(projen@0.98.34(constructs@10.7.1)))(aws-cdk-lib@2.261.0(constructs@10.7.1))(constructs@10.7.1)(projen@0.98.34(constructs@10.7.1))
       '@nikovirtala/projen-vitest':
         specifier: ^2.1.35
-        version: 2.1.35(constructs@10.7.0)(projen@0.98.34(constructs@10.7.0))
+        version: 2.1.35(constructs@10.7.1)(projen@0.98.34(constructs@10.7.1))
       '@types/node':
         specifier: ^22
         version: 22.20.1
@@ -44,7 +44,7 @@ importers:
         version: 0.28.1
       projen:
         specifier: ^0.98.34
-        version: 0.98.34(constructs@10.7.0)
+        version: 0.98.34(constructs@10.7.1)
       tsx:
         specifier: ^4.23.1
         version: 4.23.1
@@ -720,8 +720,8 @@ packages:
     resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
     engines: {node: '>=18'}
 
-  constructs@10.7.0:
-    resolution: {integrity: sha512-Vzwc30bMywc7DCzX8XOyuZbsBmfXTCrn6HHmhhELZK1J5dnUWwJ5uL7hBXGGq7xFPVOOO6cs9FwaxOshAxgcWQ==}
+  constructs@10.7.1:
+    resolution: {integrity: sha512-ulK25Sg2Nv1jW+A9VeV7fu9GFN9KdVTNWdXMoapNRwqkQzSdToro/Tttk3Ak5BGI80NRA/d2nSzKnoZ27LizLw==}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -1200,17 +1200,17 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@nikovirtala/projen-aws-cdk-app@0.0.141(@nikovirtala/projen-vitest@2.1.35(constructs@10.7.0)(projen@0.98.34(constructs@10.7.0)))(aws-cdk-lib@2.261.0(constructs@10.7.0))(constructs@10.7.0)(projen@0.98.34(constructs@10.7.0))':
+  '@nikovirtala/projen-aws-cdk-app@0.0.141(@nikovirtala/projen-vitest@2.1.35(constructs@10.7.1)(projen@0.98.34(constructs@10.7.1)))(aws-cdk-lib@2.261.0(constructs@10.7.1))(constructs@10.7.1)(projen@0.98.34(constructs@10.7.1))':
     dependencies:
-      '@nikovirtala/projen-vitest': 2.1.35(constructs@10.7.0)(projen@0.98.34(constructs@10.7.0))
-      aws-cdk-lib: 2.261.0(constructs@10.7.0)
-      constructs: 10.7.0
-      projen: 0.98.34(constructs@10.7.0)
+      '@nikovirtala/projen-vitest': 2.1.35(constructs@10.7.1)(projen@0.98.34(constructs@10.7.1))
+      aws-cdk-lib: 2.261.0(constructs@10.7.1)
+      constructs: 10.7.1
+      projen: 0.98.34(constructs@10.7.1)
 
-  '@nikovirtala/projen-vitest@2.1.35(constructs@10.7.0)(projen@0.98.34(constructs@10.7.0))':
+  '@nikovirtala/projen-vitest@2.1.35(constructs@10.7.1)(projen@0.98.34(constructs@10.7.1))':
     dependencies:
-      constructs: 10.7.0
-      projen: 0.98.34(constructs@10.7.0)
+      constructs: 10.7.1
+      projen: 0.98.34(constructs@10.7.1)
 
   '@rollup/rollup-android-arm-eabi@4.62.2':
     optional: true
@@ -1367,23 +1367,23 @@ snapshots:
       estree-walker: 3.0.3
       js-tokens: 10.0.0
 
-  aws-cdk-lib@2.261.0(constructs@10.7.0):
+  aws-cdk-lib@2.261.0(constructs@10.7.1):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.282
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.2
       '@aws-cdk/cloud-assembly-schema': 54.2.0
-      constructs: 10.7.0
+      constructs: 10.7.1
 
   aws-cdk@2.1132.0: {}
 
-  cdk-lambda-llrt@0.1.4(aws-cdk-lib@2.261.0(constructs@10.7.0))(constructs@10.7.0):
+  cdk-lambda-llrt@0.1.4(aws-cdk-lib@2.261.0(constructs@10.7.1))(constructs@10.7.1):
     dependencies:
-      aws-cdk-lib: 2.261.0(constructs@10.7.0)
-      constructs: 10.7.0
+      aws-cdk-lib: 2.261.0(constructs@10.7.1)
+      constructs: 10.7.1
 
   chai@6.2.2: {}
 
-  constructs@10.7.0: {}
+  constructs@10.7.1: {}
 
   convert-source-map@2.0.0: {}
 
@@ -1509,9 +1509,9 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  projen@0.98.34(constructs@10.7.0):
+  projen@0.98.34(constructs@10.7.1):
     dependencies:
-      constructs: 10.7.0
+      constructs: 10.7.1
 
   rollup@4.62.2:
     dependencies:
